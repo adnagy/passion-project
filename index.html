@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bootstrap Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div><h1>Clark's Website</h1></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            
+            <div class="navbar-toggler d-none"></div>
+            <div class="collapse navbar-collapse" sid="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home" onclick="showSection('home')">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sports" onclick="showSection('sports')">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#family" onclick="showSection('family')">Family</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#school" onclick="showSection('school')">School</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#music" onclick="showSection('music')">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#favorites" onclick="showSection('favorites')">Favorites</a></li>
+                </ul>
+            </div>
+
+            <script>
+                function showSection(sectionId) {
+                    const sections = document.querySelectorAll('section');
+                    sections.forEach(section => {
+                        section.style.display = section.id === sectionId ? 'block' : 'none';
+                    });
+                }
+
+                // Initially show only the "home" section
+                document.addEventListener('DOMContentLoaded', () => {
+                    showSection('home');
+                });
+            </script>
+        </div>
+    </nav>
+<hr>
+    <div class="container mt-4">
+        <section id="home">
+            <h2>Welcome to My Website</h2>
+            <p>My name is Clark. I made this website after researching the Internet as part of my Passion Project. 
+                The Internet is a massive network of computers that allows people to connect and share information.
+            </p>
+            <p>Please browse my website to see what I've shared about my self.</p>
+            <img src="Clark.jpg" alt="Your Photo" class="img-fluid rounded" width="500">
+            <p>This is a picture of me, and below are few of me goofing off.</p>
+            <img src="goofy1.jpg" alt="Goofing Off" class="img-fluid rounded" width="300">
+            <img src="goofy2.jpg" alt="Goofing Off" class="img-fluid rounded" width="300"> 
+            <img src="goofy3.jpg" alt="Goofing Off" class="img-fluid rounded" width="300">
+        </section>
+
+
+
+        <section id="sports">
+            <h2>Sports</h2>
+            <p>I enjoy playing sports, especially baseball, basketball, and tennis.</p>
+            <p>My top favorite sports are</p>
+            <ol>
+                <li>Baseball
+                    <ul>
+                        <li>I play at NALL</li>
+                        <li> I play on the Brewers Team</li>
+                    </ul>
+                </li>
+                <li>Basketball
+                    <ul>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>Tennis</li>
+            </ol>
+            
+            <video width="320" height="240" controls>
+                <source src="baseball.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Watch me make a crazy hit! Some said it looks like a tennis backhand swing!</p>
+            
+        </section>
+
+     
+
+        <section id="family">
+            <h2>Family</h2>
+            <img src="family.jpg" alt="Family" class="img-fluid rounded">
+            <p>This is my family.  I am the oldest sibling.  I have two younger brothers and no sisters.</p>
+        </section>
+
+    
+
+        <section id="school">
+            <h2>School</h2>
+            <p>I attend Butler Elementary School.  I am in the 3rd grade.  My home room teacher is Mrs. Kelly.  My 1st period class is Math.
+                My 2nd period class is Reading. Math is my favorite subject, but i really do enjoy reading books too.
+            </p>
+
+            <p>Here is a link to Butler Elementary School website. <a href="https://www.aisd.net/butler-elementary/">Visit Butler Elementary website!</a> </p>
+            <img src="school.jpg" alt="School" class="img-fluid rounded">
+        </section>
+
+
+
+        <section id="music">
+            <h2>Music</h2>
+            <p>I play the piano.  I started playing piano over 4 years ago, and I take lessons every week.  Piano is difficult, but with practice it gets easier.</p>
+            <img src="music.jpg" alt="Music" class="img-fluid rounded">
+        </section>
+
+
+
+        <section id="favorites">
+            <h2>Favorites</h2>
+            <p>The Internet is a place to share information and ideas.  In the beginning the Internet could only share information as text.
+                Now the Internet can share information in many different ways, including videos, images, sounds, and even games.  Below I've listed some of my favorite things I've found on the Internet
+            </p>
+            <ul>
+                <li>Scratch
+                    <ul>
+                        <li>Scratch is a website created by MIT to teach game coding</li>
+                        <li>Here is a game called Breakout I created with my Dad</li>
+                        <iframe src="https://scratch.mit.edu/projects/964739183/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    </ul>
+                </li>
+                <li>Youtube
+                    <ul>
+                        <li>Describe a favorite funny video</li>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/v-sOc0j-wQs?si=3dZH3FQfQHsIjk-x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </ul>
+                </li>
+                <li>Discord
+                    <ul>
+                        <li>Discord is a website that lets you talk with friends over the Internet with your PC</li>
+                        <li>My friends and I use it to talk when playing video games together over the Internet</li>
+                        <li>You should be safe online and only communicate with people that you know.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Here are some of my favorite things: books, movies, and hobbies.</p>
+            <img src="favorites.jpg" alt="Favorites" class="img-fluid rounded">
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
